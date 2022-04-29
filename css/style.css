@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "segoe ui light";
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  padding: 1rem 1.5rem;
+  transition: height 0.5ms ease-in-out;
+  background-color: white;
+}
+.nav-color {
+  background-color: #fff;
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  transition: color 0.3ms linear;
+}
+.nav-toggle:hover {
+  color: rgb(73, 166, 233);
+}
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s linear;
+}
+
+.links a {
+  text-decoration: none;
+
+  background: #fff;
+  color: #000 !important;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.25rem;
+  display: block;
+  transition: color 0.3ms linear;
+  font-weight: bold;
+  padding: 0.75rem 0;
+}
+.links a:hover {
+  color: #000;
+}
+
+.banner {
+  min-height: 100vh;
+  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+    url(../images/hero-bcg.jpeg) center/cover no-repeat;
+}
+.banner h1 {
+  color: white;
+  text-transform: uppercase;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-size: 4rem;
+}
+.banner a {
+  letter-spacing: 0.25rem;
+  font-size: 1rem;
+}
+.banner p {
+  margin-bottom: 1.25rem;
+  font-size: 1.4rem;
+  width: 65%;
+  line-height: 1.5;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 800px) {
+  nav {
+    background: transparent;
+  }
+  .nav-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+  }
+  .links li {
+    padding-right: 1rem;
+  }
+  .links a {
+    background: transparent;
+    color: #fff !important;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.25rem;
+    display: block;
+    transition: color 0.5s ease;
+    margin: 0 1rem;
+    font-weight: bold;
+    padding: 0;
+  }
+  .links a:hover {
+    color: #fff;
+  }
+}
+
+.section {
+  height: 75vh;
+}
+.section h2 {
+  text-align: center;
+  font-size: 40px;
+
+  line-height: 2.5;
+  font-weight: bold;
+  color: #102a42;
+}
+#about,
+#tours {
+  background-color: #f1f5f8;
+}
+footer {
+  background-color: #102a42;
+  padding: 5rem 1rem;
+}
+footer p {
+  font-size: 1rem;
+  letter-spacing: 0.25rem;
+}
+.btn-up {
+  position: fixed;
+  opacity: 0;
+  bottom: 20px;
+  right: 20px;
+  transition: opacity 0.7s linear;
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+}
